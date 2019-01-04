@@ -18,6 +18,7 @@
 #include "flame.hpp"
 #include "weight.hpp"
 #include "spark.hpp"
-#include "SafetyValve.hpp"
+#include "safetyValve.hpp"
+
 
 #endif /* brewControl_hpp */

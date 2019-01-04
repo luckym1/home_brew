@@ -7,3 +7,12 @@
 //
 
 #include "weight.hpp"
+
+Weight::Weight(unsigned location, unsigned address){
+    this->location = location;
+    this->address = address;
+}
+
+int Weight::getData(bool * data){
+    return 0;
+}

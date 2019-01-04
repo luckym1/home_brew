@@ -11,13 +11,18 @@
 
 #include "sensor.hpp"
 
+//Separate microcontroller on I2C bus dedicated to reading all sensor
+//inputs from the brewery
 class Temp : public Sensor{
 public:
     
     //Constructor default to 0
     Temp(unsigned location = 0, unsigned address = 0);
     
-    //overdriven temp method? Ryan Help!
+    //Passes by reference the value from each sensor
+    //Return -1 for error 0 for success
+    int getData(long * data);
+    
 };
 
 #endif /* temp_hpp */

@@ -7,3 +7,12 @@
 //
 
 #include "flame.hpp"
+
+Flame::Flame(unsigned location, unsigned address){
+    this->location = location;
+    this->address = address;
+}
+
+int Flame::getData(bool * data){
+    return 0;
+}

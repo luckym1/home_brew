@@ -7,3 +7,13 @@
 //
 
 #include "sensor.hpp"
+
+Sensor::Sensor(unsigned location, unsigned address){
+    this->location = location;
+    this->address = address;
+}
+
+//Cast to each specific data type needed
+int Sensor::getData(void * data){
+    return 0;
+}

@@ -7,3 +7,12 @@
 //
 
 #include "temp.hpp"
+
+Temp::Temp(unsigned location, unsigned address){
+    this->location = location;
+    this->address = address;
+}
+
+int Temp::getData(long * data){
+    return 0;
+}
