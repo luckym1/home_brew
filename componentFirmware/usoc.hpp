@@ -9,13 +9,22 @@
 #define usoc_h
 
 #include <iostream>
+#include <sys/socket.h>
+#include <sys/un.h>
+#include <string.h>
+#include <stdio.h>
 using namespace std;
+
+
 
 //Class that can spin up a Unix Socket
 class Usoc{
   public:
-    Usoc(int number);
+    Usoc(string socketLocation);
+
   private:
-    int num;
+    int sockfd;
+    struct sockaddr_un addr;
+    string socLoc;
 };
 #endif

@@ -5,7 +5,7 @@ using namespace std;
 
 int main(int argc, char const *argv[]) {
   cout << "test new program\n";
-  Usoc test(50);
+  Usoc test("testSoc");
 
   return 0;
 }
